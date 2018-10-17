@@ -4,7 +4,13 @@
 // };
 
 // But instead we're going to implement it from scratch:
-var getElementsByClassName = function(className
-) {
-  // your code here
+var getElementsByClassName = function(className) {
+  const nodes = window.document.body.childNodes;
+  
+  for (let i = 0; i < nodes.length; i++) {
+    if (!nodes[i].classList == className) {
+      
+    }
+  }
+  return selectedNodes;
 };
