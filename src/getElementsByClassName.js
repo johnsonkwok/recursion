@@ -35,3 +35,17 @@ var getElementsByClassName = function(className) {
   
   return traverseInnerNodes(mainNode, []);
 };
+
+// Alternate solution without using a helper function
+// var getElementsByClassName = function(className, node = document.body) {
+//   let selectedNodes = [];
+//   if (node.classList !== undefined && node.classList.contains(className)) {
+//     selectedNodes.push(node);
+//   }
+
+//   for (let innerNode of node.childNodes) {
+//     selectedNodes = selectedNodes.concat(getElementsByClassName(className, innerNode));
+//   }
+
+//   return selectedNodes;
+// }
